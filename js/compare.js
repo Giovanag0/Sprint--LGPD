@@ -4,7 +4,6 @@ let carArr = [];
 
 class Car {
     constructor(nome, preco, alturaCacamba, alturaVeiculo, alturaSolo, capacidadeCarga, motor, potencia, volumeCacamba, roda, image){
-        // CORREÇÃO: Cada atributo deve ser atribuído à sua própria variável this
         this.nome = nome;
         this.preco = preco;
         this.alturaCacamba = alturaCacamba;
@@ -35,7 +34,6 @@ function SetCarToCompare(el, carClass) {
                 el.checked = false;
                 return;
             }
-            // CORREÇÃO: Adicionar o carro ao array se for marcado
             carArr.push(carClass); 
         } else {
             let pos = GetCarArrPosition(carArr, carClass);
@@ -62,9 +60,8 @@ function HideCompare(){
 }
 
 function UpdateCompareTable() {
-    // CORREÇÃO: i++ (com ponto e vírgula) e definição da variável 'car'
     for(let i = 0; i < 2; i++){
-        let car = carArr[i]; // É necessário definir qual carro estamos lendo
+        let car = carArr[i];
         
         document.getElementById(`compare_image_${i}`).innerHTML = `<img src="${car.image}" width="150">`;
         document.getElementById(`compare_modelo_${i}`).innerText = car.nome;
