@@ -68,8 +68,8 @@ table {
 
 div#compare {
     position: fixed;
-    display: none; /* O JS vai mudar para 'block' ao clicar */
-    width: 80vw;   /* Um pouco mais largo para caber as 3 colunas da tabela */
+    display: none;
+    width: 80vw;
     max-width: 900px;
     height: auto;
     background: #fff;
@@ -81,45 +81,13 @@ div#compare {
     
     border-radius: 10px;
     padding: 20px;
-    z-index: 1000; /* Garante que fique na frente de tudo */
+    z-index: 1000;
     -webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.2);
     box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.2);
-    
-    /* Adiciona scroll se a tabela for maior que a tela do celular */
     overflow-y: auto; 
 }
-
-/* Ajuste para as imagens dentro da tabela de comparação */
 #compare img {
     max-width: 150px;
     height: auto;
     border-radius: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-/* div#compare {
-    position: fixed;
-    display: none;
-    width: 80vw;
-    max-width: 800px;
-    min-width: 320px;
-    height: auto;
-    max-height: 700px;
-    min-height: 350px;
-    background: #fff;
-    top: calc(100vh - 80%);
-    left: 25vw;
-    border-radius: 10px;
-    padding: 10px;
-    -webkit-box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 34%);
-    box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 34%);
-} */
